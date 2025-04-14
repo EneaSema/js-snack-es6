@@ -31,8 +31,8 @@ console.log(randomNumberFailsReceved);
 const newSquadSoccer = [];
 
 for (let i = 0; i < squadSoccer.length; i++) {
-  let randomNumberFailsReceved = Math.floor(Math.random() * 9 + 1);
+  let randomNumberFailsReceved = Math.floor(Math.random() * 100 + 1);
   squadSoccer[i].failsReceved += randomNumberFailsReceved;
   newSquadSoccer.push(squadSoccer[i].nameSquad, squadSoccer[i].failsReceved);
 }
-console.log(newSquadSoccer);
+console.log(`Falli subiti: ` + newSquadSoccer);
